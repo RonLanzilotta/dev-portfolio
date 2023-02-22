@@ -5,7 +5,7 @@ header('Content-Type: text/html; charset=utf-8');
 // Email recipient
 $EmailTo = "rlanzilotta1010@gmail.com";
 
-$errors = "";
+$errors = "This message failed";
 
 // Name
 if (empty($_POST["name"])) {
