@@ -1481,11 +1481,18 @@ hr {
   border-top-left-radius: 1px;
 }
 
+.skill-list {
+  display: grid;
+  /* grid-template-rows: 1fr 1fr; */
+
+}
 .skill-set {
-  flex-direction: column;
-  /* justify-content: space-between; */
-  /* align-content: space-between; */
-  margin: 0px 12px;
+  /* flex-direction: column; */
+  /* justify-content: space-between;
+  align-content: space-between; */
+  /* margin: 0px; */
+  grid-template-columns: 1fr 1fr;
+
 }
 
 
@@ -1679,6 +1686,10 @@ hr {
   visibility: visible;
 }
 
+.icon .ion-logo-github {
+  height: 100px;
+}
+
 @media (max-width: 767.98px) {
   .portfolio-section .filter-control>li {
     font-size: 14px;
@@ -1688,55 +1699,6 @@ hr {
 @media (max-width: 575.98px) {
   .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
     font-size: 14px;
-  }
-}
-
-/*----------- Blog lightbox -----------*/
-/* Blog: Blog */
-.blog-section .single-post {
-  background-color: transparent;
-  border: none;
-  margin-bottom: 70px;
-}
-
-.blog-section .single-post .post-img {
-  height: 100%;
-  position: relative;
-}
-
-.blog-section .single-post .post-img .content-date {
-  bottom: 0;
-  color: #fff;
-  display: inline-block;
-  left: 0;
-  padding: 0 14px;
-  position: absolute;
-}
-
-.blog-section .single-post .post-content {
-  padding: 13px 0 0 0;
-}
-
-.blog-section .single-post .post-content .content-title {
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-  margin-bottom: 6px;
-}
-
-.blog-section .single-post .post-content .content-description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-}
-
-@media (max-width: 991.98px) {
-  .blog-section .single-post {
-    margin-bottom: 40px;
-  }
-
-  .blog-section .single-post .post-content .content-title {
-    font-size: 20px;
   }
 }
 
