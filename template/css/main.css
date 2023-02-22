@@ -1439,14 +1439,15 @@ hr {
     margin-bottom: 0;
   }
 
-  .resume-section .col-12:first-child .resume-item:last-child {
+  /* .resume-section .col-12:first-child .resume-item:last-child {
     margin-bottom: 60px;
-  }
+  } */
 }
 
 /* Resume: Skills */
 .skills-section .single-skill:not(:last-child) {
   margin-bottom: 42px;
+  display: flex;
 }
 
 .skills-section .single-skill .skill-info {
@@ -1460,12 +1461,14 @@ hr {
 }
 
 .skills-section .single-skill .skill-info .skill-name {
+  color: #cecece;
+  font-size: 16px;
   display: inline-block;
   margin-right: 12px;
   white-space: nowrap;
 }
 
-.skills-section .single-skill .skill-progress {
+.skills-section .single-skill {
   background-color: #2f2f2f;
   border-radius: 1px;
   font-size: 15px;
@@ -1473,10 +1476,18 @@ hr {
   overflow: visible;
 }
 
-.skills-section .single-skill .skill-progress .progress-bar {
+.skills-section .single-skill {
   border-bottom-left-radius: 1px;
   border-top-left-radius: 1px;
 }
+
+.skill-set {
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* align-content: space-between; */
+  margin: 0px 12px;
+}
+
 
 @media (max-width: 767.98px) {
   .skills-section .single-skill:not(:last-child) {
