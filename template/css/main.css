@@ -124,7 +124,7 @@ hr {
 }
 
 .element-cover-bg:before {
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   position: absolute;
@@ -132,6 +132,19 @@ hr {
   width: 100%;
 }
 
+.skill-lists {
+  padding: 30px;
+  --n: 4; /* number of rows*/
+  --m: 5; /* number of columns */
+  --g: 20px; /* control the gap */
+  --f: 1.5; /* control the scale factor */
+
+  display: grid;
+  gap: var(--g);
+  width: calc(var(--m) * var(--s) + (var(--m) - 1) * var(--g));
+  height: calc(var(--n) * var(--s) + (var(--n) - 1) * var(--g));
+  grid-template-columns: repeat(var(--m), auto);
+}
 /* Animations */
 @-webkit-keyframes fadeIn {
   from {
@@ -271,7 +284,7 @@ hr {
   text-align: center;
 }
 
-.tns-nav>[aria-controls] {
+.tns-nav > [aria-controls] {
   background: #ddd;
   border: 0;
   border-radius: 50%;
@@ -281,7 +294,7 @@ hr {
   width: 9px;
 }
 
-.tns-nav>.tns-nav-active {
+.tns-nav > .tns-nav-active {
   background: #999;
 }
 
@@ -357,12 +370,12 @@ hr {
 }
 
 .lity-close:before {
-  content: '';
+  content: "";
   width: 85%;
 }
 
 .lity-close:after {
-  content: '';
+  content: "";
 }
 
 .lity-close .btn-line {
@@ -474,12 +487,12 @@ hr {
 }
 
 .lightbox-wrapper .lightbox-close .close-btn:before {
-  content: '';
+  content: "";
   width: 85%;
 }
 
 .lightbox-wrapper .lightbox-close .close-btn:after {
-  content: '';
+  content: "";
 }
 
 .lightbox-wrapper .lightbox-close .close-btn .btn-line {
@@ -524,7 +537,9 @@ hr {
   width: 9px;
 }
 
-.lightbox-wrapper .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+.lightbox-wrapper
+  .simplebar-track.simplebar-vertical
+  .simplebar-scrollbar:before {
   background: #3c3c3c;
 }
 
@@ -541,7 +556,7 @@ hr {
   text-align: left;
 }
 
-.lightbox-wrapper .lightbox-content .section-heading>.section-title {
+.lightbox-wrapper .lightbox-content .section-heading > .section-title {
   display: inline-block;
   font-size: 38px;
   font-weight: 700;
@@ -557,14 +572,20 @@ hr {
   text-align: center;
 }
 
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.section-title {
+.lightbox-wrapper
+  .lightbox-content
+  .section-heading.page-heading
+  > .section-title {
   font-size: 46px;
   margin-bottom: 37px;
 }
 
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar {
+.lightbox-wrapper
+  .lightbox-content
+  .section-heading.page-heading
+  > .animated-bar {
   background-color: #fff;
-  content: '';
+  content: "";
   display: block;
   height: 4px;
   left: 0;
